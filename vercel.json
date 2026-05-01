@@ -1,13 +1,12 @@
 {
-  "buildCommand": "cd frontend && npm install && npm run build",
+  "framework": "vite",
+  "installCommand": "cd frontend && npm install",
+  "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/dist",
   "functions": {
-    "api/*.py": {
+    "api/plan-trip.py": {
       "runtime": "@vercel/python@4.3.1",
       "maxDuration": 30
     }
-  },
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
-  ]
+  }
 }
