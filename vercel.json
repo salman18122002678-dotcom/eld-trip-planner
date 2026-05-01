@@ -1,1 +1,6 @@
-{ "framework": "vite", "functions": { "api/plan-trip.py": { "runtime": "@vercel/python@4.3.1", "maxDuration": 30 } } }
+{
+  "framework": "vite",
+  "installCommand": "npm install --prefix frontend",
+  "buildCommand": "npm run build --prefix frontend",
+  "outputDirectory": "frontend/dist",
+  "functions": { "api/plan-trip.py": { "runtime": "@vercel/python@4.3.1", "maxDuration": 30 } } }
