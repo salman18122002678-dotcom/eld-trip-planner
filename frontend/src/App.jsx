@@ -5,8 +5,7 @@ import RouteMap from './components/RouteMap'
 import StopsTimeline from './components/StopsTimeline'
 import ELDLogSheet from './components/ELDLogSheet'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
-
+const API_URL = import.meta.env.VITE_API_URL || 'https://web-production-94f3a.up.railway.app'
 function App() {
   const [tripData, setTripData] = useState(null)
   const [loading, setLoading] = useState(false)
